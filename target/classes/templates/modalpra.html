@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" th:inline="javascript" src="/js/drawing.js"></script>
+<script type="text/javascript" th:inline="javascript" src="/js/vis.js"></script>
+<head>
+</head>
+<body>
+
+<div class="w3-container">
+    <h2>W3.CSS Modal</h2>
+    <button onclick="f()" class="w3-button w3-black">Open Modal</button>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Modal Header</h2>
+            </header>
+            <button class="w3-button w3-black" onclick="f()">submit</button>
+            <div id="modal_id" class="w3-container">
+                <p>Some text. Some text. Some text.</p>
+                <p>Some text. Some text. Some text.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
